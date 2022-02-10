@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://marvelui.netlify.app/stylesheets/main.css"/>
+        <link rel="stylesheet" href="./stylesheets/styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <title>Marvel Store</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="logo">
+                <a href="#">Marvel Store</a>
+            </h1>
+            <div class="search-wrapper">
+            <form action="">
+              <input
+                type="text"
+                name="search-bar"
+                id="search-bar"
+                placeholder="Search"
+              />
+            </form>
+            </div>
+            <button class="btn btn-primary">Login</button>
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="badge-container">
+                                <span class="badge badge-sm badge-text">0</span>
+                                <img class="img-xs" src="./assets/heart.svg" alt="shopping-cart"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-container">
+                                <span class="badge badge-sm badge-text">0</span>
+                                <img class="img-xs" src="./assets/cart.svg" alt="shopping-cart"/>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="user">
+                  <img class="img-sm-2" src="./assets/user.svg" alt="user"/>
+                </a>
+            </div>
+        </header>
+        <main>
+          <div class="main-section">
+            <div class="main-container flex-col-wrap-center">
+              <div class="sign-up card-container">
+                <div class="input-container flex-col-wrap-center">
+                  <h2>Login</h2>
+                  <div class="input-group">
+                      <div class="input-label">Email address</div>
+                      <input type="text" class="input-field input-field-20w" placeholder="abc@gmail.com"></input>
+                  </div>
+                  <div class="input-group">
+                    <div class="input-label">Password</div>
+                    <input type="password" class="input-field input-field-20w" placeholder="************"></input>
+                 </div>
+                 <div class="input-group">
+                  <input type="radio" class="input-field"><span class="radio-text">Remember me</span></input>
+                  <button class="btn-link btn-forgot-password">Forgot your password?</button>
+                 </div>
+                 <button class="btn btn-primary btn-login">Login</button>
+                 <div>Already have an account<i class="fa fa-thin fa-chevron-right"></i></div>
+              </div>
+            </div>
+        </div>
+        </main>
+
+    </body>
+</html>
