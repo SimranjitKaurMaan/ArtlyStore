@@ -95,7 +95,7 @@ a.user {
 }
 
 /* Card */
-.card-container {
+.card-vertical-container {
   width: max-content;
 }
 
@@ -130,11 +130,19 @@ a.user {
   width: 100%;
 }
 
-.card-content-aside {
+.card-vertical-body > .card-content-aside {
   text-align: center;
 }
 
 .card-subtitle-lg {
   font-size: var(--fs-base);
   font-weight: var(--fw-light);
+}
+
+.striked {
+  text-decoration: line-through;
+}
+
+.card-footer-aside {
+  display: flex;
 }
