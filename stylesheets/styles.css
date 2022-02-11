@@ -112,3 +112,29 @@ a.user {
 .fa-chevron-right {
   padding-left: 0.5rem;
 }
+
+.card-icon-overlay-container {
+  position: relative;
+  width: max-content;
+  margin: var(--space-sm);
+}
+
+.card-wish-icon {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+
+.card-footer > .btn {
+  width: 100%;
+}
+
+.card-content-aside {
+  text-align: center;
+}
+
+.card-subtitle-lg {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-light);
+}
