@@ -1,3 +1,5 @@
+/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -18,6 +20,8 @@
   display: inline-block;
   padding: 0;
 }
+
+/* Image */
 .img-xs {
   width: 2.5rem;
   height: 2.5rem;  
@@ -28,6 +32,7 @@
   height: 3.5rem;  
 }
 
+/* Badges */
 .badge-xs {
   width: 0.5rem;
   height: 0.5rem;
@@ -42,6 +47,7 @@
   margin-left: 1rem;
 }
 
+/* Form */
 form {
   display: flex;
 }
@@ -57,6 +63,7 @@ form > input {
   margin-left: 1rem;
 }
 
+/* Button */
 .btn {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -73,16 +80,12 @@ form > input {
   padding-left: 2rem;
 }
 
+/* link */
 a.user {
   padding: 0;
 }
 
-.login,
-.sign-up {
-  padding: 3rem;
-  margin: 15rem;
-}
-
+/* Input */
 .input-group {
   margin-top: 2rem;
 }
@@ -91,8 +94,15 @@ a.user {
   width: 20rem;
 }
 
+/* Card */
 .card-container {
   width: max-content;
+}
+
+.login,
+.sign-up {
+  padding: 3rem;
+  margin: 15rem;
 }
 
 .radio-text {
