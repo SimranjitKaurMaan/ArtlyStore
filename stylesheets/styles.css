@@ -202,6 +202,10 @@ aside {
   align-items: center;
 }
 
+body {
+  display: flex;
+}
+
 /* footer */
 footer {
   margin-top: auto;
