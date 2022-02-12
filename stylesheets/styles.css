@@ -113,6 +113,8 @@ a.user {
   padding-left: 0.5rem;
 }
 
+
+/* Card */
 .card-icon-overlay-container {
   position: relative;
   width: max-content;
@@ -146,3 +148,75 @@ a.user {
 .card-footer-aside {
   display: flex;
 }
+
+/* Grid */
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 20px;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "aside main"
+  "aside main"
+  "aside main"
+  "footer footer";
+}
+
+main {
+  width: 100%;
+  grid-area: main;
+}
+
+header {
+  grid-area: header;
+}
+
+/* aside */
+
+aside {
+  grid-area: aside;
+}
+
+.flex-col-wrap-start {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.check-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-link {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  margin-top: auto;
+  width: 100%;
+  grid-area: footer;
+}
+
+.footer-container i {
+  padding: var(--space-sm);
+  color: var(--color-gray-darker);
+}
+
+.footer-text {
+  padding: 0;
+  margin: 0;
+}
+
+
