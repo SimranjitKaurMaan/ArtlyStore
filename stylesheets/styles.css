@@ -1,0 +1,114 @@
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--color-gray-lighter);
+  padding: 2rem;
+}
+
+.header-nav {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav li {
+  display: inline-block;
+  padding: 0;
+}
+
+/* Image */
+.img-xs {
+  width: 2.5rem;
+  height: 2.5rem;  
+}
+
+.img-sm-2 {
+  width: 3.5rem;
+  height: 3.5rem;  
+}
+
+/* Badges */
+.badge-xs {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.badge-text {
+  line-height: 0.5rem;
+  font-size: var(--fs-xs);
+}
+
+.cart {
+  margin-left: 1rem;
+}
+
+/* Form */
+form {
+  display: flex;
+}
+
+form > input {
+  width: 30rem;
+  flex-grow: 1;
+  border: 2px solid var(--color-white);
+  border-radius: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* Button */
+.btn {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.btn-login {
+  width: 20rem;
+}
+
+.btn-link.btn-forgot-password {
+  border: none;
+  text-decoration: none;
+  color: var(--color-primary);
+  padding-left: 2rem;
+}
+
+/* link */
+a.user {
+  padding: 0;
+}
+
+/* Input */
+.input-group {
+  margin-top: 2rem;
+}
+
+.input-field-20w {
+  width: 20rem;
+}
+
+/* Card */
+.card-container {
+  width: max-content;
+}
+
+.login,
+.sign-up {
+  padding: 3rem;
+  margin: 15rem;
+}
+
+.radio-text {
+  margin-left: 0.5rem;
+}
+
+.fa-chevron-right {
+  padding-left: 0.5rem;
+}
