@@ -141,6 +141,10 @@ a.user {
   right: 2rem;
 }
 
+.card-wish-icon i {
+  color: var(--color-red);
+}
+
 .card-footer > .btn {
   width: 100%;
 }
