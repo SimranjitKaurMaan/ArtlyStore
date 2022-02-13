@@ -1,3 +1,6 @@
+:root {
+  --color-aside-border: #DBDBDB;
+}
 /* Header */
 
 .header {
@@ -152,19 +155,28 @@ a.user {
   width: 20rem;
 }
 
-.card-hz-title {
+.card-title {
   font-size: var(--fs-lg);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-light);
 }
 
-.card-hz-subtitle {
+.card-subtitle {
   font-size: 1.2rem;
-  font-weight: var(--fw-light);
+  font-weight: var(--fw-bold);
+  padding: 0.2rem;
+}
+
+.card-hz-subtitles {
+  display: flex;
 }
 
 .card-hz-actions {
   display: flex;
   flex-direction: column; 
+}
+
+.card-hz-content-aside {
+  padding-left: 1rem;
 }
 
 
@@ -213,6 +225,10 @@ header {
 
 aside {
   grid-area: aside;
+  border-right: 2px solid var(--color-aside-border);
+  width: max-content;
+  padding: 0 2rem;
+  /* background-color: lightseagreen; */
 }
 
 .flex-col-wrap-start {
@@ -226,8 +242,13 @@ aside {
 .check-group {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
 }
 
+.check-group-label {
+  padding-left: 1rem;
+}
 .btn-link {
   margin: 1rem;
   padding: 1rem;
