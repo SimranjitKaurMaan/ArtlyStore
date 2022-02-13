@@ -3,7 +3,7 @@
 }
 /* Header */
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   justify-content: center;
@@ -11,10 +11,13 @@
   flex-wrap: wrap;
   background-color: var(--color-gray-lighter);
   padding: 2rem;
+  width: 100%;
+  margin-bottom: auto;
 }
 
 .header-nav {
   margin-left: auto;
+  margin-right: 10rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -23,6 +26,15 @@
   display: inline-block;
   padding: 0;
 }
+
+.user {
+  margin-left: 1rem;
+}
+
+a.user {
+  padding: 0;
+}
+
 
 .logo-container {
   margin-left: 16rem;
@@ -55,7 +67,15 @@
 
 .badge-text {
   line-height: 0.5rem;
-  font-size: var(--fs-xs);
+  font-size: 0.8rem;
+}
+.badge {
+  background-color: var(--color-red);
+  border: none;
+}
+.badge-md {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .cart {
@@ -95,10 +115,6 @@ form > input {
   padding-left: 2rem;
 }
 
-/* link */
-a.user {
-  padding: 0;
-}
 
 /* Input */
 .input-group {
@@ -276,7 +292,6 @@ aside {
   border-right: 2px solid var(--color-aside-border);
   width: max-content;
   padding: 0 2rem;
-  /* background-color: lightseagreen; */
 }
 
 .flex-col-wrap-start {
