@@ -1,3 +1,6 @@
+:root {
+  --color-aside-border: #DBDBDB;
+}
 /* Header */
 
 .header {
@@ -95,14 +98,13 @@ a.user {
 }
 
 /* Card */
-.card-vertical-container {
+.card-container {
   width: max-content;
 }
 
 .login,
 .sign-up {
   padding: 3rem;
-  margin: 15rem;
 }
 
 .radio-text {
@@ -149,11 +151,40 @@ a.user {
   display: flex;
 }
 
+.card-img-20w {
+  width: 20rem;
+}
+
+.card-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-light);
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  padding: 0.2rem;
+}
+
+.card-hz-subtitles {
+  display: flex;
+}
+
+.card-hz-actions {
+  display: flex;
+  flex-direction: column; 
+}
+
+.card-hz-content-aside {
+  padding-left: 1rem;
+}
+
+
 /* Grid */
 .wrapper {
   display: grid;
   width: 100%;
-  grid-gap: 20px;
+  grid-gap: 1.5rem;
   grid-template-columns: 13rem 1fr;
   grid-template-areas: 
   "header header"
@@ -161,6 +192,24 @@ a.user {
   "aside main"
   "aside main"
   "footer footer";
+}
+
+
+.auth-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
+
+body {
+  display: flex;
 }
 
 main {
@@ -176,6 +225,10 @@ header {
 
 aside {
   grid-area: aside;
+  border-right: 2px solid var(--color-aside-border);
+  width: max-content;
+  padding: 0 2rem;
+  /* background-color: lightseagreen; */
 }
 
 .flex-col-wrap-start {
@@ -189,8 +242,13 @@ aside {
 .check-group {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
 }
 
+.check-group-label {
+  padding-left: 1rem;
+}
 .btn-link {
   margin: 1rem;
   padding: 1rem;
@@ -200,10 +258,6 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-body {
-  display: flex;
 }
 
 /* footer */
@@ -222,5 +276,3 @@ footer {
   padding: 0;
   margin: 0;
 }
-
-
