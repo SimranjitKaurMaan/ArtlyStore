@@ -247,7 +247,7 @@ a.user {
   display: grid;
   width: 100%;
   grid-gap: 1.5rem;
-  grid-template-columns: 13rem 13rem 13rem 13rem 1fr;
+  grid-template-columns: repeat(4, 13rem) 1fr;
   grid-template-areas: 
   "header header header header header"
   "main   main    main   main   main"
