@@ -137,10 +137,9 @@ a.user {
 
 .card-wish-icon {
   position: absolute;
-  top: 0;
-  right: 1rem;
+  top: 1rem;
+  right: 2rem;
 }
-
 
 .card-footer > .btn {
   width: 100%;
