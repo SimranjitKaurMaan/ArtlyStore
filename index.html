@@ -10,49 +10,76 @@
         <title>Artly Store</title>
     </head>
     <body>
-        <header class="header">
-            <div class="logo-container">
-                <a href="./index.html">
-                <h1>Artly<span class="logo-text">Store</span></h1></a>
-            </div>
-            <div class="search-wrapper">
-            <form action="">
-              <input
-                type="text"
-                name="search-bar"
-                id="search-bar"
-                placeholder="Search"
-              />
-            </form>
-            </div>
-            <button class="btn btn-primary">Login</button>
-            <div class="header-nav">
-                <nav>
-                    <ul>
-                        <li>
-                            <div class="badge-container">
-                                <span class="badge badge-sm badge-text">0</span>
-                                <img class="img-xs" src="./assets/heart.svg" alt="shopping-cart"/>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="badge-container">
-                                <span class="badge badge-sm badge-text">0</span>
-                                <img class="img-xs" src="./assets/cart.svg" alt="shopping-cart"/>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="user">
-                  <img class="img-sm-2" src="./assets/user.svg" alt="user"/>
-                </a>
-            </div>
-        </header>
+        <div class="home-wrapper">
+            <header class="header">
+                <div class="logo-container">
+                    <a href="./index.html">
+                    <h1>Artly<span class="logo-text">Store</span></h1></a>
+                </div>
+                <div class="search-wrapper">
+                <form action="">
+                <input
+                    type="text"
+                    name="search-bar"
+                    id="search-bar"
+                    placeholder="Search"
+                />
+                </form>
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="badge-container">
+                                    <span class="badge badge-sm badge-text">1</span>
+                                    <img class="img-xs" src="./assets/heart.svg" alt="shopping-cart"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="badge-container">
+                                    <span class="badge badge-sm badge-text">1</span>
+                                    <img class="img-xs" src="./assets/cart.svg" alt="shopping-cart"/>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="user">
+                    <img class="img-user" src="./assets/user.svg" alt="user"/>
+                    </a>
+                </div>
+            </header>
         <main>
           <div class="main-section">
             <div class="main-container flex-col-wrap-center">
+                <div class="banner"></div>
+                <div class="sub-banner-area flex-row-wrap-center">
+                    <img class="img-banner" src="./assets/avatar-2.jpeg" alt="banner"/>
+                    <img class="img-banner" src="./assets/avatar-2.jpeg" alt="banner"/>
+                </div>
             </div>
-        </div>
+          </div>
        </main>
+       <footer class="footer-container flex-col-wrap-center">
+            <p class="footer-text">Made by 
+                <a target="_blank" href="https://simrk.netlify.app/" class="text-warning">
+                    Simranjit Kaur
+                </a>
+            </p>
+            <div class="footer-icons flex-row-wrap-space-around">
+                <a target="_blank" href="https://github.com/SimranjitKaurMaan">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://in.linkedin.com/in/simranjitkaurmec">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/Simranjit1994">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="mailto:simranjitkaur94mec@gmail.com">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+       </div>
     </body>
 </html>

@@ -42,9 +42,19 @@
   height: 2.5rem;  
 }
 
-.img-sm-2 {
+.img-user {
   width: 3.5rem;
   height: 3.5rem;  
+}
+
+.img-md {
+  width: 6rem;
+  height: 6rem;
+}
+
+.img-lg {
+  width: 10rem;
+  height: 10rem;
 }
 
 /* Badges */
@@ -227,6 +237,19 @@ a.user {
 
 
 .cart-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
+
+.home-wrapper {
   display: grid;
   width: 100%;
   grid-gap: 1.5rem;
