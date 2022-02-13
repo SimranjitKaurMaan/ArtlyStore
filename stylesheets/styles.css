@@ -71,6 +71,7 @@ a.user {
 }
 .badge {
   background-color: var(--color-red);
+  border: none;
 }
 .badge-md {
   width: 1.2rem;
