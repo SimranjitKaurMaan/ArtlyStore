@@ -1,3 +1,6 @@
+:root {
+  --color-aside-border: #DBDBDB;
+}
 /* Header */
 
 .header {
@@ -21,15 +24,37 @@
   padding: 0;
 }
 
+.logo-container {
+  margin-left: 16rem;
+}
+
+.logo-text {
+  color: var(--color-white);
+  background-color: var(--color-primary-darker);
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 2px;
+}
+
 /* Image */
 .img-xs {
   width: 2.5rem;
   height: 2.5rem;  
 }
 
-.img-sm-2 {
+.img-user {
   width: 3.5rem;
   height: 3.5rem;  
+}
+
+.img-md {
+  width: 6rem;
+  height: 6rem;
+}
+
+.img-lg {
+  width: 10rem;
+  height: 10rem;
 }
 
 /* Badges */
@@ -95,14 +120,13 @@ a.user {
 }
 
 /* Card */
-.card-vertical-container {
+.card-container {
   width: max-content;
 }
 
 .login,
 .sign-up {
   padding: 3rem;
-  margin: 15rem;
 }
 
 .radio-text {
@@ -123,10 +147,9 @@ a.user {
 
 .card-wish-icon {
   position: absolute;
-  top: 0;
-  right: 1rem;
+  top: 1rem;
+  right: 2rem;
 }
-
 
 .card-footer > .btn {
   width: 100%;
@@ -149,11 +172,46 @@ a.user {
   display: flex;
 }
 
+.card-img-20w {
+  width: 20rem;
+}
+
+.card-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-light);
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  padding: 0.2rem;
+}
+
+.card-hz-subtitles {
+  display: flex;
+}
+
+.card-hz-actions {
+  display: flex;
+  flex-direction: column; 
+}
+
+.card-hz-content-aside {
+  padding-left: 1rem;
+}
+
+.slider-quantity {
+  width: max-content;
+  border-radius: var(--br-base);
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}
+
 /* Grid */
 .wrapper {
   display: grid;
   width: 100%;
-  grid-gap: 20px;
+  grid-gap: 1.5rem;
   grid-template-columns: 13rem 1fr;
   grid-template-areas: 
   "header header"
@@ -161,6 +219,64 @@ a.user {
   "aside main"
   "aside main"
   "footer footer";
+}
+
+
+.auth-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
+
+
+.cart-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
+
+.home-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
+
+.wishlist-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 13rem 13rem 13rem 1fr;
+  grid-template-areas: 
+  "header header header header header"
+  "main   main    main   main   main"
+  "main   main    main   main   main"
+  "main   main    main   main   main"
+  "footer footer  footer footer footer";
+}
+
+body {
+  display: flex;
 }
 
 main {
@@ -176,6 +292,10 @@ header {
 
 aside {
   grid-area: aside;
+  border-right: 2px solid var(--color-aside-border);
+  width: max-content;
+  padding: 0 2rem;
+  /* background-color: lightseagreen; */
 }
 
 .flex-col-wrap-start {
@@ -189,8 +309,13 @@ aside {
 .check-group {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
 }
 
+.check-group-label {
+  padding-left: 1rem;
+}
 .btn-link {
   margin: 1rem;
   padding: 1rem;
@@ -200,10 +325,6 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-body {
-  display: flex;
 }
 
 /* footer */
@@ -223,4 +344,32 @@ footer {
   margin: 0;
 }
 
+/* Utilities */
+.flex-row-wrap-space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
+/* Price Container */
+
+.price-container {
+  padding: 0.2rem 1rem;
+}
+
+.price-container-header {
+  border-bottom: 1px solid var(--color-aside-border);
+  padding: 0.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.amount-container {
+  padding: 0.5rem 1rem;
+}
+
+.total-amount-container {
+  border-top: 1px solid var(--color-aside-border);
+  border-bottom: 1px solid var(--color-aside-border);
+  font-weight: var(--fw-bold);
+}

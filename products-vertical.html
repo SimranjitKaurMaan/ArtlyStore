@@ -13,15 +13,15 @@
             <div class="wrapper">
                 <!-- Header -->
                 <header class="header">
-                    <h1 class="logo">
-                        <a href="#">Artly Store</a>
-                    </h1>
+                    <div class="logo-container">
+                        <a href="./index.html">
+                        <h1>Artly<span class="logo-text">Store</span></h1></a>
+                    </div>
                     <div class="search-wrapper">
                         <form action="">
                             <input type="text" name="search-bar" id="search-bar" placeholder="Search"/>
                         </form>
                     </div>
-                    <button class="btn btn-primary">Login</button>
                     <div class="header-nav">
                         <nav>
                             <ul>
@@ -51,28 +51,28 @@
                             <h2>Filters</h2>
                             <button class="btn btn-link">Clear</button>
                         </div>
-                        <div class="price-container">
+                        <div class="slider-price-container">
                             <h2>Price</h2>
-                            <input type="range" name="price-range" min="50" max="200" value="150"></input>
+                            <input class="price-slider" type="range" name="price-range" min="50" max="200" value="150"></input>
                         </div>
                       <div class="category-container flex-col-wrap-start">
                         <h2>Category</h2>
-                        <span class="check-group"><input type="checkbox" name="category"></input></input><label>Portraits</label></span>
-                        <span class="check-group"><input type="checkbox" name="category"></input></input><label>Basel Works</label></span>
-                        <span class="check-group"><input type="checkbox" name="category"></input></input><label>Photography</label></span>
-                        <span class="check-group"><input type="checkbox" name="category"></input></input><label>Water</label></span>
+                        <span class="check-group"><input type="checkbox" name="category"></input></input><label class="check-group-label">Portraits</label></span>
+                        <span class="check-group"><input type="checkbox" name="category"></input></input><label class="check-group-label">Basel Works</label></span>
+                        <span class="check-group"><input type="checkbox" name="category"></input></input><label class="check-group-label">Photography</label></span>
+                        <span class="check-group"><input type="checkbox" name="category"></input></input><label class="check-group-label">Water</label></span>
                       </div>
                       <div class="rating-container flex-col-wrap-start">
                         <h2>Rating</h2>
-                        <span class="check-group"><input type="radio" name="rating"></input><label>4 Stars & above</label></span>
-                        <span class="check-group"><input type="radio" name="rating"></input><label>3 Stars & above</label></span>
-                        <span class="check-group"><input type="radio" name="rating"></input><label>2 Stars & above</label></span>
-                        <span class="check-group"><input type="radio" name="rating"></input><label>1 Stars & above</label></span>
+                        <span class="check-group"><input type="radio" name="rating"></input><label class="check-group-label">4 Stars & above</label></span>
+                        <span class="check-group"><input type="radio" name="rating"></input><label class="check-group-label">3 Stars & above</label></span>
+                        <span class="check-group"><input type="radio" name="rating"></input><label class="check-group-label">2 Stars & above</label></span>
+                        <span class="check-group"><input type="radio" name="rating"></input><label class="check-group-label">1 Stars & above</label></span>
                       </div>
                       <div class="sortby-container flex-col-wrap-start">
                         <h2>Sort by</h2>
-                        <span class="check-group"><input type="radio" name="sort-by"></input><label>Price - Low to High</label></span>
-                        <span class="check-group"><input type="radio" name="sort-by"><label>Price - High to Low</label></input></span>
+                        <span class="check-group"><input type="radio" name="sort-by"></input><label class="check-group-label">Price - Low to High</label></span>
+                        <span class="check-group"><input type="radio" name="sort-by"><label class="check-group-label">Price - High to Low</label></input></span>
                       </div>
                     </div>
                 </aside>
@@ -81,25 +81,25 @@
                     <div class="main-section">
                         <div class="main-container flex-row-wrap-center">
                             <div class="card-container card-icon-overlay-container">
-                                <span class="card-wish-icon"><i class="fas fa-heart icon-unchecked"></i></span>
+                                <div class="card-wish-icon"><i class="fas fa-heart fa-2x icon-unchecked"></i></div>
                                 <div class="card-body card-vertical-body">
                                     <img class="card-img card-vertical-img" alt="painting" src="./assets/avatar-2.jpeg" sizes="(min-width: 600px) 200px,100px"/>
                                     <div class="card-content-aside">
-                                        <div class="card-subtitle card-subtitle-lg">Picaso Painting</div>
-                                        <div class="card-title">$2000</div>
+                                        <div class="card-title">Picaso Painting</div>
+                                        <div class="card-subtitle">$2000</div>
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                   <button class="btn btn-primary">Add to Cart</button>
+                                   <button class="btn btn-secondary">Go to Cart</button>
                                 </div>
                             </div>
                             <div class="card-container card-icon-overlay-container">
-                                <span class="card-wish-icon"><i class="fas fa-heart icon-unchecked"></i></span>
+                                <span class="card-wish-icon"><i class="fas fa-heart fa-2x icon-unchecked"></i></span>
                                 <div class="card-body card-vertical-body">
                                     <img class="card-img card-vertical-img" alt="painting" src="./assets/avatar-2.jpeg" sizes="(min-width: 600px) 200px,100px"/>
                                     <div class="card-content-aside">
-                                        <div class="card-subtitle card-subtitle-lg">Picaso Painting</div>
-                                        <div class="card-title">$2000</div>
+                                        <div class="card-title">Picaso Painting</div>
+                                        <div class="card-subtitle">$2000</div>
                                     </div>
                                 </div>
                                 <div class="card-footer">
