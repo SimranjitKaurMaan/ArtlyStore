@@ -289,7 +289,6 @@ aside {
   border-right: 2px solid var(--color-aside-border);
   width: max-content;
   padding: 0 2rem;
-  /* background-color: lightseagreen; */
 }
 
 .flex-col-wrap-start {
