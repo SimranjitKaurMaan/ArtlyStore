@@ -95,14 +95,13 @@ a.user {
 }
 
 /* Card */
-.card-vertical-container {
+.card-container {
   width: max-content;
 }
 
 .login,
 .sign-up {
   padding: 3rem;
-  margin: 15rem;
 }
 
 .radio-text {
@@ -149,11 +148,31 @@ a.user {
   display: flex;
 }
 
+.card-img-20w {
+  width: 20rem;
+}
+
+.card-hz-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+.card-hz-subtitle {
+  font-size: 1.2rem;
+  font-weight: var(--fw-light);
+}
+
+.card-hz-actions {
+  display: flex;
+  flex-direction: column; 
+}
+
+
 /* Grid */
 .wrapper {
   display: grid;
   width: 100%;
-  grid-gap: 20px;
+  grid-gap: 1.5rem;
   grid-template-columns: 13rem 1fr;
   grid-template-areas: 
   "header header"
@@ -161,6 +180,24 @@ a.user {
   "aside main"
   "aside main"
   "footer footer";
+}
+
+
+.auth-wrapper {
+  display: grid;
+  width: 100%;
+  grid-gap: 1.5rem;
+  grid-template-columns: 13rem 1fr;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
+
+body {
+  display: flex;
 }
 
 main {
@@ -202,10 +239,6 @@ aside {
   align-items: center;
 }
 
-body {
-  display: flex;
-}
-
 /* footer */
 footer {
   margin-top: auto;
@@ -222,5 +255,3 @@ footer {
   padding: 0;
   margin: 0;
 }
-
-
