@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://artlyui.netlify.app/stylesheets/main.css"/>
+        <link rel="stylesheet" href="./stylesheets/styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <title>Artly Store</title>
+    </head>
+    <body>
+        <div class="cart-wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <a href="#">Artly Store</a>
+            </h1>
+            <div class="search-wrapper">
+            <form action="">
+              <input
+                type="text"
+                name="search-bar"
+                id="search-bar"
+                placeholder="Search"
+              />
+            </form>
+            </div>
+            <button class="btn btn-primary">Login</button>
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="badge-container">
+                                <span class="badge badge-sm badge-text">0</span>
+                                <img class="img-xs" src="./assets/heart.svg" alt="shopping-cart"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-container">
+                                <span class="badge badge-sm badge-text">0</span>
+                                <img class="img-xs" src="./assets/cart.svg" alt="shopping-cart"/>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="user">
+                  <img class="img-sm-2" src="./assets/user.svg" alt="user"/>
+                </a>
+            </div>
+        </header>
+        <main>
+          <div class="main-section">
+            <div class="main-container flex-row-wrap-center">
+                <div class="card-container">
+                    <div class="card-body card-body-compact">
+                        <div class="card-img-20w">
+                            <img src="./assets/avatar-1.jpeg" srcset="./assets/avatar-1.jpeg 100w" alt="painting" sizes="(min-width: 600px) 200px,100px"/>
+                        </div>
+                        <div class="card-content-aside card-hz-content-aside">
+                            <div class="card-title">Picaso Painting</div>
+                            <div class="card-hz-subtitles">
+                            <div class="card-subtitle">$2000</div>
+                            <div class="card-subtitle striked">$3000</div>
+                            </div>
+                            <div class="card-subtitle card-hz-subtitle">50% off</div>
+                            <div class="card-hz-actions">
+                                <button class="btn btn-primary">Remove From Cart</button>
+                                <button class="btn btn-secondary">Move to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container price-container">
+                    <div class="price-container-header">PRICE DETAILS</div>
+                    <div class="amount-container flex-row-wrap-space-between">
+                        <div>Price (2 Items)</div>
+                        <div>$2000</div>
+                    </div>
+                    <div class="amount-container flex-row-wrap-space-between">
+                        <div>Discount</div>
+                        <div>$200</div>
+                    </div>
+                    <div class="amount-container flex-row-wrap-space-between">
+                        <div>Delivery Charges</div>
+                        <div>$50</div>
+                    </div>
+                    <div class="amount-container total-amount-container flex-row-wrap-space-between">
+                        <div>TOTAL AMOUNT</div>
+                        <div>$1985</div>
+                    </div>
+                    <div class="amount-container">You will save $100 on this order</div>
+                    <button class="btn btn-primary">Place Order</button>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="footer-container flex-col-wrap-center">
+            <p class="footer-text">Made by 
+                <a target="_blank" href="https://simrk.netlify.app/" class="text-warning">
+                    Simranjit Kaur
+                </a>
+            </p>
+            <div class="footer-icons flex-row-wrap-space-around">
+                <a target="_blank" href="https://github.com/SimranjitKaurMaan">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://in.linkedin.com/in/simranjitkaurmec">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/Simranjit1994">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="mailto:simranjitkaur94mec@gmail.com">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
