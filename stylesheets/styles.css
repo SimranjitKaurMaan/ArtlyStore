@@ -191,6 +191,12 @@ a.user {
   padding-left: 1rem;
 }
 
+.slider-quantity {
+  width: max-content;
+  border-radius: var(--br-base);
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}
 
 /* Grid */
 .wrapper {
