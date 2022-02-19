@@ -1,5 +1,6 @@
 :root {
   --color-aside-border: #DBDBDB;
+  --color-primary-darker: #E05009;
 }
 /* Header */
 
@@ -410,11 +411,13 @@ footer {
 .collections-header {
   font-size: var(--fs-lg);
   font-weight: var(--fw-bold);
+  color: var(--color-primary-darker);
+  padding-top: 4rem;
 }
 
 .grid-4 {
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 0.2rem;
   grid-template-columns: 6rem 6rem;
 }
 
@@ -423,6 +426,52 @@ footer {
 }
 
 .collection-header {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  padding-bottom: 0;
   font-weight: var(--fw-bold);
 }
+
+.collection-subheader {
+  color: var(--color-gray-darker);
+  font-weight: var(--fw-bold);
+  font-size: 0.8rem;
+}
+
+.trending-img-container {
+  padding: 0.5rem;
+  border: 1px solid var(--color-aside-border);
+  border-radius: var(--br-base);
+  text-align: center;
+  box-shadow: 0 1px 2px grey;
+}
+
+.trending-img-container > .collection-header{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.collection-left-top-img {
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+
+.collection-left-bottom-img {
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-top-left-radius: 0rem;
+}
+
+.collection-right-top-img {
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+
+
+.collection-right-bottom-img {
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+
