@@ -1,6 +1,10 @@
 :root {
   --color-aside-border: #DBDBDB;
+  --color-hero-background: #FEFEFC;
+  --color-primary-lighter: #FFB896;
   --color-primary-darker: #E05009;
+  --color-header-text: #ED5E01;
+  --color-primary-ghost: #F6BCA6;;
 }
 /* Header */
 
@@ -10,7 +14,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--color-gray-lighter);
+  background-color: var(--color-primary-lighter);
   padding: 2rem;
   width: 100%;
   margin-bottom: auto;
@@ -74,14 +78,23 @@ img {
   max-width: 100%;
 }
 
-.hero-img-container {
-  background: url(../assets/banner.jpeg);
-  background-repeat: repeat;
-  background-position: 50% 50%;
-  background-color: var(--color-gray-lighter);
-  object-fit: cover;
+.hero-img {
   height: 50vh;
-  width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-hero-background);
+  padding-left: 2rem;
+}
+.hero-content {
+  width: 40%;
+}
+
+.hero-content > * {
+  padding-top: 1rem;
 }
 
 /* Badges */
@@ -142,7 +155,9 @@ form > input {
   padding-left: 2rem;
 }
 
-
+.btn-primary.btn-ghost {
+  background-color: var(--color-primary-ghost);
+}
 /* Input */
 .input-group {
   margin-top: 2rem;
@@ -301,7 +316,7 @@ form > input {
 
 body {
   display: flex;
-  background-color: var(--color-gray);
+  background-color: var(--color-hero-background);
 }
 
 main {
@@ -353,7 +368,7 @@ aside {
 
 /* footer */
 footer {
-  background-color: var(--color-gray-lighter);
+  background-color: var(--color-primary-lighter);
   margin-top: auto;
   width: 100%;
   grid-area: footer;
@@ -402,7 +417,6 @@ footer {
 /* Collections Container */
 
 .collections-container {
-  /* background-color: turquoise; */
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -475,3 +489,7 @@ footer {
   border-bottom-left-radius: 0rem;
 }
 
+.highlight-text {
+  color: var(--color-header-text);
+  font-weight: var(--fw-bold);
+}
