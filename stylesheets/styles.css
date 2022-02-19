@@ -97,6 +97,10 @@ img {
   padding-top: 1rem;
 }
 
+.btn-hero {
+  margin-top: 2rem;
+}
+
 /* Badges */
 .badge-xs {
   width: 0.5rem;
@@ -154,7 +158,6 @@ form > input {
   color: var(--color-primary);
   padding-left: 2rem;
 }
-
 .btn-primary.btn-ghost {
   background-color: var(--color-primary-ghost);
 }
@@ -374,6 +377,14 @@ footer {
   grid-area: footer;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
 .footer-container i {
   padding: var(--space-sm);
   color: var(--color-gray-darker);
@@ -384,6 +395,14 @@ footer {
   margin: 0;
 }
 
+.footer-content > * {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.footer-heading {
+  padding: 2rem;
+}
 /* Utilities */
 .flex-row-wrap-space-between {
   display: flex;
