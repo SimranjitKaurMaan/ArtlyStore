@@ -126,6 +126,8 @@ form > input {
 .btn {
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 .btn-login {
