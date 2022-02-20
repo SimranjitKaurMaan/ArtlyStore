@@ -17,11 +17,9 @@ header {
   background-color: var(--color-primary-lighter);
   padding: 2rem;
   width: 100%;
-  margin-bottom: auto;
 }
 
 .header-nav {
-  margin-left: auto;
   margin-right: 10rem;
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +40,7 @@ a.user {
 
 
 .logo-container {
-  margin-left: 16rem;
+  margin-left: 8rem;
 }
 
 .logo-text {
@@ -57,11 +55,6 @@ a.user {
 .img-xs {
   width: 2.5rem;
   height: 2.5rem;  
-}
-
-.img-sm-2 {
-  width: 3.5rem;
-  height: 3.5rem;  
 }
 
 .img-20 {
@@ -140,12 +133,23 @@ form > input {
   margin-left: 1rem;
 }
 
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.fa-search {
+  cursor: pointer;
+}
+
 /* Button */
 .btn {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .btn-login {
