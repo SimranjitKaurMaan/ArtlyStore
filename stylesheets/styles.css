@@ -142,10 +142,10 @@ form > input {
 
 /* Button */
 .btn {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .btn-login {
