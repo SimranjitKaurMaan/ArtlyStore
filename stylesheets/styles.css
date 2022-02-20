@@ -17,7 +17,6 @@ header {
   background-color: var(--color-primary-lighter);
   padding: 2rem;
   width: 100%;
-  margin-bottom: auto;
 }
 
 .header-nav {
@@ -56,11 +55,6 @@ a.user {
 .img-xs {
   width: 2.5rem;
   height: 2.5rem;  
-}
-
-.img-sm-2 {
-  width: 3.5rem;
-  height: 3.5rem;  
 }
 
 .img-20 {
@@ -137,6 +131,17 @@ form > input {
   padding: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.fa-search {
+  cursor: pointer;
 }
 
 /* Button */
