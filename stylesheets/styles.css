@@ -386,7 +386,8 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .footer-container i {
@@ -516,4 +517,19 @@ footer {
 .highlight-text {
   color: var(--color-header-text);
   font-weight: var(--fw-bold);
+}
+
+@media screen and (max-width: 48em) {
+  .footer-content > * {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  #footer-logo { display: none; }
+}
+
+@media screen and (max-width: 100em) {
+  .footer-content > * {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
