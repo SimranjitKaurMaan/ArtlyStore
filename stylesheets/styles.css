@@ -285,7 +285,6 @@ form > input {
   display: grid;
   width: 100%;
   grid-gap: 1.5rem;
-  grid-template-columns: 13rem 1fr;
   grid-template-areas: 
   "header header"
   "main main"
