@@ -312,6 +312,18 @@ form > input {
   "footer footer";
 }
 
+.login-wrapper {
+  display: grid;
+  width: 100%;
+  height: 90rem;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "main main"
+  "main main"
+  "footer footer";
+}
 
 .cart-wrapper {
   display: grid;
