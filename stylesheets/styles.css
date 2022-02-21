@@ -255,14 +255,14 @@ form > input {
 }
 
 .card-title {
-  font-size: var(--fs-lg);
-  font-weight: var(--fw-light);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
 }
 
 .card-subtitle {
-  font-size: 1.2rem;
+  font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
-  padding: 0.2rem;
+  padding: 0 0.2rem;
 }
 
 .card-hz-subtitles {
