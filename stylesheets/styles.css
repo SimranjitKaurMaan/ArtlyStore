@@ -536,14 +536,14 @@ footer {
   font-weight: var(--fw-bold);
 }
 
-@media screen and (max-width: 100em) {
+@media screen and (max-width: 100em) and (min-width: 50em) {
   .footer-content > * {
     margin: 1rem;
     padding: 1rem;
   }
 
-  .search-wrapper {
-    display: none;
+  .search-wrapper > form > input {
+    width: 10rem;
   }
 
   header {
