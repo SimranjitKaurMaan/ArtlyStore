@@ -257,14 +257,14 @@ form > input {
 }
 
 .card-title {
-  font-size: var(--fs-lg);
-  font-weight: var(--fw-light);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-bold);
 }
 
 .card-subtitle {
-  font-size: 1.2rem;
+  font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
-  padding: 0.2rem;
+  padding: 0 0.2rem;
 }
 
 .card-hz-subtitles {
@@ -540,6 +540,7 @@ footer {
   color: var(--color-header-text);
   font-weight: var(--fw-bold);
 }
+
 
 /* Media Queries for Wide Screen */
 @media screen and (max-width: var(--wide-screen-max-width)) and (min-width: var(--wide-screen-min-width)) {
