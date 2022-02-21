@@ -4,11 +4,13 @@
   --color-primary-lighter: #FFB896;
   --color-primary-darker: #E05009;
   --color-header-text: #ED5E01;
-  --color-primary-ghost: #F6BCA6;;
+  --color-primary-ghost: #F6BCA6;
+  --wide-screen-max-width: 100em;
+  --wide-screen-min-width: 50em;
+  --small-screen-max-width: 48em;
 }
 
 /* Body  */
-
 body {
   display: flex;
   background-color: var(--color-hero-background);
@@ -56,6 +58,7 @@ a.user {
   padding: 0;
 }
 
+/* Logo */
 
 .logo-container {
   margin-left: 8rem;
@@ -70,6 +73,11 @@ a.user {
 }
 
 /* Image */
+
+img {
+  max-width: 100%;
+}
+
 .img-xs {
   width: 2.5rem;
   height: 2.5rem;  
@@ -84,11 +92,6 @@ a.user {
   position: relative;
 }
 
-
-img {
-  max-width: 100%;
-}
-
 /* Hero */
 .hero-img {
   height: 50vh;
@@ -101,6 +104,7 @@ img {
   background-color: var(--color-hero-background);
   padding-left: 2rem;
 }
+
 .hero-content {
   width: 40%;
 }
@@ -136,7 +140,7 @@ img {
   margin-left: 1rem;
 }
 
-/* Form */
+/* Search Container */
 form {
   display: flex;
 }
@@ -157,6 +161,14 @@ form > input {
   align-items: center;
   justify-content: center;
   padding-right: 2rem;
+}
+
+.input-group {
+  margin-top: 2rem;
+}
+
+.input-field-20w {
+  width: 20rem;
 }
 
 .fa-search {
@@ -184,14 +196,6 @@ form > input {
 .btn-primary.btn-ghost {
   background-color: var(--color-primary-ghost);
 }
-/* Input */
-.input-group {
-  margin-top: 2rem;
-}
-
-.input-field-20w {
-  width: 20rem;
-}
 
 /* Card */
 .card-container {
@@ -211,8 +215,6 @@ form > input {
   padding-left: 0.5rem;
 }
 
-
-/* Card */
 .card-icon-overlay-container {
   position: relative;
   width: max-content;
@@ -379,6 +381,7 @@ aside {
 .check-group-label {
   padding-left: 1rem;
 }
+
 .btn-link {
   margin: 1rem;
   padding: 1rem;
@@ -426,6 +429,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 /* Utilities */
 .flex-row-wrap-space-between {
   display: flex;
@@ -531,12 +535,14 @@ footer {
   border-bottom-left-radius: 0rem;
 }
 
+/* Utilities */
 .highlight-text {
   color: var(--color-header-text);
   font-weight: var(--fw-bold);
 }
 
-@media screen and (max-width: 100em) and (min-width: 50em) {
+/* Media Queries for Wide Screen */
+@media screen and (max-width: var(--wide-screen-max-width)) and (min-width: var(--wide-screen-min-width)) {
   .footer-content > * {
     margin: 1rem;
     padding: 1rem;
@@ -568,7 +574,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 48em) {
+/* Media Queries for Small Screen */
+@media screen and (max-width: var(--small-screen-max-width)) {
   .footer-content > * {
     margin: 0rem;
     padding: 0rem;
